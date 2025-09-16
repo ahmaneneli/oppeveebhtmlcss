@@ -1,0 +1,282 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image:url()
+}
+
+#sissejuhatus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+#sissejuhatus p {
+  max-width: 800px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#Teooria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+#veelinfot{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+.hero {
+  height: 100vh; 
+  background-image: url("/images/beagle.jpg");
+  background-size: cover;      
+  background-position: center; 
+  background-repeat: no-repeat;
+  position: relative;          
+  display: flex;               
+  justify-content: center;
+  align-items: center;
+  color: #f7d1bb;                
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+   .nav a {
+    font-size: 10px;
+  }
+
+   .pildid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  
+   .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .nav a {
+    font-size: 10px;
+  }
+
+  .pildid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: end;
+  
+}
+  
+
+nav{
+position: absolute;
+  top: 40px;
+  right: 50px;
+}
+
+.nav a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-shadow: 2px 2px 4px rgba(221, 144, 144, 0.2); /* Tekstile varju efekt */
+
+  
+}
+
+a{
+  text-decoration: none;
+  color:#4a4a4a;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 10px;
+}
+a:hover {
+  color: #7a7a7a;
+  
+}
+
+a:focus-visible {
+  outline: 2px solid black; 
+outline-offset: 3px;  
+  border-radius: 4px;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #4a4a4a;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #4a4a4a;
+}
+
+p {
+  font-size: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+.visiitkaart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  margin: 50px 0;
+}
+
+.kaart {
+  background-color: #f9f9f9;
+  padding: 40px;        
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  max-width: 500px;     
+  width: 90%;           
+}
+
+.kaart img {
+  width: 120px;
+  height: 120px;
+ border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.kuldne {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.username {
+  color: #555;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #fdf1da; 
+  color: rgb(247, 209, 187);
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+}
+
+.õpilane {
+  
+  font-size: 20px;
+  margin: 0;
+}
+
+.pildid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;  
+  margin-top: 50px;
+}
+
+.pildi-blokk {
+  text-align: center;
+}
+
+.unsplash-img,
+.kontakt-pilt {
+  width: 200px; 
+  height: 200px; 
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px; 
+}
+
+a[href= "mailto:eneli.ahman@voco.ee"] {
+  font-size: 16px;
+  color: #4a4a4a;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.floating-info-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #4a4a4a;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bounce 1s ease-in-out infinite;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.info-icon {
+  width: 50px;
+  height: 50px;
+  color: #4a4a4a;
+  transition: color 0.3s;
+}
+
+.floating-info-btn:hover {
+  background-color: rgb(241, 95, 120); 
+  transform: scale(1.2);
+}
+
+.floating-info-btn:hover .info-icon circle {
+  fill: rgb(241, 95, 120);
+}
+
+.floating-info-btn .info-icon text {
+  fill: #fff;
+  font-size: 10px
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}

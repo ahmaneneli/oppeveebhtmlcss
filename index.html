@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS">  
+    <meta name="description" content="...">
+    <title>Üheleheline õppeveeb</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav" aria-label="Põhinavigatsioon">
+        <a href="#sissejuhatus">Sissejuhatus</a>
+        <a href="#Teooria">Teooria</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <div class="hero-content">
+        <h1>Tere tulemast! See on minu VEEBILEHT</h1>
+      </div>
+    </header>
+
+    <main>
+      <section id="sissejuhatus">
+        <h2>Sissejuhatus</h2>
+        <h3>Mis on HTML?</h3>
+        <p>HTML (HyperText Markup Language) on keel, millega märgendatakse veebilehti. Selle abil loome veebilehele struktuuri, pannes ritta elemendid, millest veebileht koosneb. CSS (Cascading Style Sheets) on keel veebilehtede kujundamiseks. CSS-i abil saame määrata HTML-iga ritta pandud elementide asukohta, värvi jms.</p>
+      </section>
+
+      <section id="Teooria">
+        <h2>Teooria</h2>
+        <p>HTML tähendus</p>
+      </section>
+
+      <section id="veelinfot">
+        <h2>Veel infot</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </section>
+    </main>
+
+    <div class="visiitkaart">
+      <div class="kaart">
+        <img src="images/koer.jpg" alt="Koer lillega">
+        <p class="õpilane">UX/UI disainer</p>
+        <p class="username">@eneli.ahman</p>
+      </div>
+    </div>
+
+    <div class="pildid">
+      <div class="pildi-blokk">
+        <a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">
+          <img class="unsplash-img"
+               src="https://images.unsplash.com/photo-1512546321483-c0468b7b8a95?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+               alt="Klikitav beagle"
+               loading="lazy">
+        </a>
+      </div>
+
+      
+      <div class="pildi-blokk">
+        <a href="#kontakt">
+          <img class="kontakt-pilt"
+               src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=1748&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+               alt="Mine kontaktlehele">
+        </a>
+        <h3 id="kontakt">Kontakt</h3>
+        <p>Võta meiega ühendust.</p>
+        <p><a href="mailto:eneli.ahman@voco.ee">eneli.ahman@voco.ee</a></p>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>&copy; 2025 Minu VEEBILEHT. Kõik õigused kaitstud.</p>
+    </footer>
+  
+    <button class="floating-info-btn">
+      <svg class="info-icon" role="img" aria-labelledby="ic-title ic-desc" width="24" height="24" viewBox="0 0 24 24">
+        <title id="ic-title">Info ikoon</title>
+        <desc id="ic-desc">Ringis Info</desc>
+        <circle cx="12" cy="12" r="10" fill="#4a4a4a"/>
+        <text x="12" y="16" text-anchor="middle" font-size="10" fill="white">Info</text>
+      </svg>
+    </button>
+
+  </body>
+</html>
